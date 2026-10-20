@@ -1,29 +1,29 @@
 body {
-  background-color: #FFFFEO; /* Warna kuning cerah */
-  font-family: Arial, sans-sheriff; /* jenis huruf yang bersih dan mudah dibaca */
-  color: #191970; /*Warna teks utama (Biru gelap) */
+    background-color: #4DD1B9; /* Warna kuning cerah */
+    font-family: Arial, sans-serif; /* Jenis huruf yang bersih dan mudah di baca */
+    color: #121212; /* Warna teks utama (Biru Gelap) */
 }
 
 .kartu-profil {
-  width: 300px;
-  margin: 50px auto; /* 50px jarak atas/bawah, auto kirir/kanan */
-  padding: 20px;
-  background-color: white;
-  border-radius: 15px; /*membuat sudut menjadi melengkung */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* efek bayangan */
+    width: 300px;
+    margin: 50px auto; /* Jarak atas/baawah, auto menengahkan kanan/kiri :*/
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px; /*Membuat sudut menjadi melengkung*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0,1); /* efek bayangan */
 }
-|
+
+
 .kartu-profil img {
-  width: 150px;
-  border-radius: 50%; 
+    width: 150px
+    border-radius: 50%  
 }
-
 .kartu-profil {
   width: 300px;
-  margin: 50px auto; /* 50px jarak atas/bawah, auto kirir/kanan */
-  padding: 20px;
-  background-color: white;
-  border-radius: 15px; /*membuat sudut menjadi melengkung */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* efek bayangan */
-  text-align: center; 
+    margin: 50px auto; /* Jarak atas/baawah, auto menengahkan kanan/kiri :*/
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px; /*Membuat sudut menjadi melengkung*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0,1); /* efek bayangan */
+  text-align: center;
 }
