@@ -1,17 +1,63 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-        <title>Profil Saya . Athrea</title>
-        <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kalkulator Biru</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="kartu profil">
-        <img src ="foto-profil.jpg" alt="profil saya">
-        <h1>Athrea</h1>
-        <p>Siswa SMA yang tertarik dengan teknologi dean desain. Selamat datang di website perata saya!</p>
-        <a href="https://www.instagram.com/ssunfishes">kunjungi instagram saya</a>
-        <button id="sapaButton">Sapa Saya!</button>       
+
+    <div class="calculator">
+
+        <h1 class="title">🔵 Kalkulator</h1>
+
+        <input
+            type="text"
+            class="display"
+            id="display"
+            value="0"
+            readonly
+            aria-label="Layar kalkulator"
+        >
+
+        <div class="buttons">
+
+            <button class="function" onclick="clearDisplay()">AC</button>
+            <button class="function" onclick="deleteNumber()">⌫</button>
+            <button class="function" onclick="percentage()">%</button>
+            <button class="operator" onclick="chooseOperator('/')">÷</button>
+
+            <button onclick="addNumber('7')">7</button>
+            <button onclick="addNumber('8')">8</button>
+            <button onclick="addNumber('9')">9</button>
+            <button class="operator" onclick="chooseOperator('*')">×</button>
+
+            <button onclick="addNumber('4')">4</button>
+            <button onclick="addNumber('5')">5</button>
+            <button onclick="addNumber('6')">6</button>
+            <button class="operator" onclick="chooseOperator('-')">−</button>
+
+            <button onclick="addNumber('1')">1</button>
+            <button onclick="addNumber('2')">2</button>
+            <button onclick="addNumber('3')">3</button>
+            <button class="operator" onclick="chooseOperator('+')">+</button>
+
+            <button class="zero" onclick="addNumber('0')">0</button>
+            <button onclick="addDecimal()">.</button>
+            <button class="equal" onclick="calculate()">=</button>
+
+        </div>
+
+        <p class="footer">Simple Blue Calculator © 2026</p>
+
     </div>
-<script src="script.js"></script>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+
 </body>
-</html> 
+</html>
