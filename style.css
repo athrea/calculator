@@ -1,30 +1,138 @@
+/* Pengaturan halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-    background-color: #2434F2; 
-    font-family: "Arial", sans-serif;
-    color: #121212; 
-}
-
-.kartu-profil {
-    width: 300px;
-    margin: 50px auto; /* Jarak atas/bawah, auto menengahkan kanan/kiri :*/
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #dbeafe, #60a5fa, #2563eb);
     padding: 20px;
-    background-color: white;
-    border-radius: 15px; /*Membuat sudut menjadi melengkung*/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* efek bayangan */
-    text-align: center;
 }
 
-
-.kartu-profil img {
-    width: 150px;
-    border-radius: 50%;  
+/* Kotak kalkulator */
+.calculator {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    background: #eff6ff;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(15, 50, 120, 0.3);
 }
-.kartu-profil {
-    width: 300px;
-    margin: 50px auto; /* Jarak atas/bawah, auto menengahkan kanan/kiri :*/
-    padding: 20px;
-    background-color: white;
-    border-radius: 15px; /*Membuat sudut menjadi melengkung*/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* efek bayangan */
+
+/* Judul */
+.title {
     text-align: center;
+    color: #1e40af;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Layar kalkulator */
+.display {
+    width: 100%;
+    height: 90px;
+    background: #dbeafe;
+    border: 2px solid #93c5fd;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: right;
+    color: #1e3a8a;
+    font-size: 32px;
+    font-weight: bold;
+    outline: none;
+}
+
+/* Susunan tombol */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Desain tombol */
+button {
+    height: 58px;
+    border: none;
+    border-radius: 14px;
+    background: #bfdbfe;
+    color: #1e40af;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #93c5fd;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Tombol fungsi */
+.function {
+    background: #60a5fa;
+    color: white;
+}
+
+.function:hover {
+    background: #3b82f6;
+}
+
+/* Tombol operator */
+.operator {
+    background: #2563eb;
+    color: white;
+}
+
+.operator:hover {
+    background: #1d4ed8;
+}
+
+/* Tombol hasil */
+.equal {
+    background: #1e40af;
+    color: white;
+}
+
+.equal:hover {
+    background: #1e3a8a;
+}
+
+/* Tombol angka nol */
+.zero {
+    grid-column: span 2;
+}
+
+/* Tulisan bawah */
+.footer {
+    text-align: center;
+    color: #3b82f6;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Tampilan HP */
+@media (max-width: 400px) {
+    .calculator {
+        padding: 18px;
+    }
+
+    button {
+        height: 52px;
+        font-size: 18px;
+    }
+
+    .display {
+        font-size: 28px;
+    }
 }
